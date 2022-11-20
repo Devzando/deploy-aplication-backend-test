@@ -4,7 +4,7 @@ const express = require('express')
 const app = express()
 
 app.get('/', (req, res) => {
-    return res.json(process.env.teste)
+    return res.json({msg: "hello"})
 })
 
 app.listen(3333)
