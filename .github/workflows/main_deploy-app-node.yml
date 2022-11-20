@@ -24,9 +24,6 @@ jobs:
       - name: instalando dependencias
         run: npm install
 
-      - name: rodando aplicacao
-        run: npm run start
-
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
         with:
