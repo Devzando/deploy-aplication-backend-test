@@ -21,10 +21,11 @@ jobs:
         with:
           node-version: '16.x'
 
-      - name: npm install, build, and test
-        run: |
-          npm install
-          npm run start
+      - name: instalando dependencias
+        run: npm install
+
+      - name: rodando aplicacao
+        run: npm run start
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
